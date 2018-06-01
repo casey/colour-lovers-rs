@@ -93,7 +93,7 @@ dependencies = [
 
 [[package]]
 name = "colour-lovers"
-version = "0.1.0"
+version = "0.0.0"
 dependencies = [
  "reqwest 0.8.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.64 (registry+https://github.com/rust-lang/crates.io-index)",

@@ -1,7 +1,7 @@
 use common::*;
 
 #[derive(StructOpt, Debug)]
-#[structopt(name = "iris")]
+#[structopt(name = "colour-lovers")]
 pub enum Opt {
   #[structopt(name = "color")]
   Color {

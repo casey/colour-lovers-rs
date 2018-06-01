@@ -1,10 +1,13 @@
 [package]
-name = "colour-lovers"
-version = "0.1.0"
-authors = ["Casey Rodarmor <casey@rodarmor.com>"]
+name        = "colour-lovers"
+version     = "0.0.0"
+description = "🎨 Tools for interacting with COLOURlovers"
+authors     = ["Casey Rodarmor <casey@rodarmor.com>"]
+license     = "CC0-1.0"
+homepage    = "https://github.com/casey/colour-lovers-rs"
 
 [dependencies]
-structopt = "0.2.8"
-reqwest = "0.8.6"
+reqwest      = "0.8.6"
+serde        = "1.0.64"
 serde_derive = "1.0.64"
-serde = "1.0.64"
+structopt    = "0.2.8"
