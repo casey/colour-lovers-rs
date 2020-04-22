@@ -5,9 +5,10 @@ description = "🎨 Tools for interacting with COLOURlovers"
 authors     = ["Casey Rodarmor <casey@rodarmor.com>"]
 license     = "CC0-1.0"
 homepage    = "https://github.com/casey/colour-lovers-rs"
+edition     = "2018"
 
 [dependencies]
-reqwest      = "0.8.6"
+reqwest      = { version = "0.10", features = ["blocking", "json"] }
 serde        = "1.0.64"
 serde_derive = "1.0.64"
 structopt    = "0.2.8"

@@ -1,3 +1,4 @@
 vim-markdown-preview.html
 /target
 **/*.rs.bk
+Cargo.lock

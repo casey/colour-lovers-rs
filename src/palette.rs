@@ -1,4 +1,4 @@
-use common::*;
+use crate::common::*;
 
 #[derive(Deserialize, Debug)]
 #[allow(dead_code)]

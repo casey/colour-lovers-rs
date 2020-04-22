@@ -1,4 +1,4 @@
-use common::*;
+use crate::common::*;
 
 pub struct Module {
   name:   String,
