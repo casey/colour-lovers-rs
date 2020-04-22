@@ -7,10 +7,10 @@ pub use std::{
 pub use structopt::StructOpt;
 pub use reqwest::{self, get, Response};
 
-pub use color::Color;
-pub use palette::Palette;
-pub use error::Error;
-pub use opt::Opt;
-pub use rgb::Rgb;
-pub use hsv::Hsv;
-pub use module::Module;
+pub use crate::color::Color;
+pub use crate::palette::Palette;
+pub use crate::error::Error;
+pub use crate::opt::Opt;
+pub use crate::rgb::Rgb;
+pub use crate::hsv::Hsv;
+pub use crate::module::Module;

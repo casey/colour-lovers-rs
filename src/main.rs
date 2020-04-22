@@ -15,9 +15,10 @@ mod api;
 
 use common::*;
 
+
 fn fetch_color(rgb: Rgb) -> Result<Color, Error> {
   let url = format!("http://www.colourlovers.com/api/color/{}?format=json", rgb); 
-  let colors: Vec<Color> = get(&url)?.error_for_status()?.json()?; 
+  let colors: Vec<Color>  = reqwest::blocking::get(&url)?.json()?; 
   Ok(colors.into_iter().next().unwrap())
 }
 
@@ -26,7 +27,7 @@ fn main() -> Result<(), Error> {
     Opt::Color{hex} => println!("{:#?}", fetch_color(hex)?),
     Opt::Palette{id} => {
       let url = format!("http://www.colourlovers.com/api/palette/{}?format=json", id); 
-      let palettes: Vec<Palette> = get(&url)?.error_for_status()?.json()?; 
+      let palettes: Vec<Palette> = reqwest::blocking::get(&url)?.json()?; 
       let palette = palettes.into_iter().next().unwrap();
       let colors = palette.colors.iter()
         .map(|hex| fetch_color(hex.parse().unwrap()))
